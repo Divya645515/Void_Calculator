@@ -80,15 +80,17 @@ equal.addEventListener(("click"),()=>{
 })
 
 function calculate() {
-    if (op== "+") 
-        rs = parseInt(rs) + parseInt(a);
-    else if (op== "-") 
-        rs = rs - a;
-    else if (op== "*")
-        rs = rs*a;
-    else if (op=="/")
-        rs = rs/a;
-   
+    let num1 = parseFloat(rs);
+    let num2 = parseFloat(a);
+    
+    if (op == "+") 
+        rs = num1 + num2;
+    else if (op == "-") 
+        rs = num1 - num2;
+    else if (op == "*")
+        rs = num1 * num2;
+    else if (op == "/")
+        rs = num1 / num2;
 }
 
 
@@ -138,4 +140,9 @@ btn9.addEventListener(("click"),()=>{
     display.value = a
 })
 
-
+dbtn.addEventListener("click", () => {
+    if (!a.includes(".")) {
+        a = a + ".";
+        display.value = a;
+    }
+});
