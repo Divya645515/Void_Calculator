@@ -20,6 +20,7 @@ let clear = document.getElementById("clear");
 
 
 
+
 let a="";
 let rs="";
 let op = "";
@@ -60,6 +61,16 @@ div.addEventListener("click",()=>{
     }
 })
 
+clear.addEventListener("click", () => {
+    a = "";
+    rs = "";
+    op = "";
+    display.value = "";
+    display.placeholder = "0";
+});
+
+
+
 
 equal.addEventListener(("click"),()=>{
     calculate()
@@ -77,6 +88,7 @@ function calculate() {
         rs = rs*a;
     else if (op=="/")
         rs = rs/a;
+   
 }
 
 
