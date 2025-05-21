@@ -13,4 +13,9 @@ let btn9 = document.getElementById("btn9");
 let plus  = document.getElementById("plus");
 let minus = document.getElementById("minus");
 let mul = document.getElementById("mul");
+let div = document.getElementById("div");
 
+
+plus.addEventListener(("click"),=>{
+    
+})
