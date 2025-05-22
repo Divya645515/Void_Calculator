@@ -13,8 +13,8 @@ let btn9 = document.getElementById("btn9");
 
 let plus  = document.getElementById("plus");
 let minus = document.getElementById("minus");
-let mul = document.getElementById("mul");
-let div = document.getElementById("div");
+let mul   = document.getElementById("mul");
+let div   = document.getElementById("div");
 let equal = document.getElementById("btn=");
 let clear = document.getElementById("clear");
 
@@ -33,7 +33,7 @@ plus.addEventListener("click",()=>{
         op = "+"
     }
     else{
-        a=parseInt(rs)+parseInt(a)
+        a=parseFloat(rs)+parseFloat(a)
         rs=""
     }
 })
@@ -46,7 +46,7 @@ minus.addEventListener("click",()=>{
         op = "-"
     }
     else{
-        a=parseInt(rs)-parseInt(a)
+        a=parseFloat(rs)-parseFloat(a)
         rs=""
     }
 })
@@ -59,7 +59,7 @@ mul.addEventListener("click",()=>{
         op = "*"
     }
     else{
-        a=parseInt(rs)*parseInt(a)
+        a=parseFloat(rs)*parseFloat(a)
         rs=""
     }
 })
@@ -72,7 +72,7 @@ div.addEventListener("click",()=>{
         op = "/"
     }
     else{
-        a=parseInt(rs)/parseInt(a)
+        a=parseFloat(rs)/parseFloat(a)
         rs=""
     }
 })
