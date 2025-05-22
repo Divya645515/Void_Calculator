@@ -33,8 +33,10 @@ plus.addEventListener("click",()=>{
         op = "+"
     }
     else{
-        a=parseFloat(rs)+parseFloat(a)
-        rs=""
+        calculate()
+        a= rs;
+        rs="";
+        op="+"
     }
 })
 
@@ -46,8 +48,10 @@ minus.addEventListener("click",()=>{
         op = "-"
     }
     else{
-        a=parseFloat(rs)-parseFloat(a)
-        rs=""
+        calculate()
+        a= rs;
+        rs="";
+        op = "-"
     }
 })
 
@@ -59,8 +63,10 @@ mul.addEventListener("click",()=>{
         op = "*"
     }
     else{
-        a=parseFloat(rs)*parseFloat(a)
-        rs=""
+        calculate()
+        a= rs;
+        rs="";
+        op="*"
     }
 })
 
@@ -72,8 +78,10 @@ div.addEventListener("click",()=>{
         op = "/"
     }
     else{
-        a=parseFloat(rs)/parseFloat(a)
-        rs=""
+        calculate()
+        a= rs;
+        rs="";
+        op="/"
     }
 })
 
