@@ -41,3 +41,7 @@ button[id="clear"] {
   color: white;
   font-weight: bold;
 }
+button[id="btn="]{
+  background-color: rgb(9, 192, 9);
+  color: white;
+}

@@ -75,8 +75,8 @@ clear.addEventListener("click", () => {
 equal.addEventListener(("click"),()=>{
     calculate()
     display.value = rs;
-    a= ""
-    rs=""
+    a= rs;
+    rs="";
 })
 
 function calculate() {
@@ -93,11 +93,6 @@ function calculate() {
         rs = num1 / num2;
 }
 
-
-// clear.addEventListener(("click"),()=>{
-//     display.value="";
-//     display.placeholder=0
-// })
 
 btn0.addEventListener(("click"),()=>{
     a= a+"0"
